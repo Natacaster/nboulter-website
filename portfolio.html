@@ -1,14 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
-    <meta name="description" content="Browse real client work including email sequences, sales pages, funnel copy, niche samples, and VSL scripts. See examples of how strategic copywriting drives revenue.">
-    <meta name="keywords" content="copywriting portfolio, email marketing examples, sales page samples, funnel copy examples, VSL scripts, copywriter for coaches">
+    <meta name="description" content="Browse ecommerce email marketing samples, product launches, welcome flows, cart recovery emails, seasonal campaigns, sales pages, and copywriting samples by Natalie Boulter.">
+    <meta name="keywords" content="ecommerce copywriter portfolio, email marketing examples, product launch emails, welcome flow examples, cart recovery emails, sales page samples">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Real Copywriting Work by Natalie Boulter</title>
+    <title>Portfolio | Ecommerce Email Copywriting by Natalie Boulter</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+
+    <style>
+        .portfolio-hero {
+            text-align: center;
+            padding: 2.8rem 1.5rem 2rem;
+        }
+
+        .portfolio-heading {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(2.6rem, 5vw, 4.5rem);
+            line-height: 1.05;
+            font-weight: 500;
+            letter-spacing: -0.04em;
+            color: #111111;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio-subtext {
+            max-width: 720px;
+            margin: 0 auto 2rem;
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        .portfolio-hero-image img {
+            width: 100%;
+            max-width: 650px;
+            height: 400px;
+            object-fit: cover;
+            object-position: 50% 70%;
+            margin: 0 auto;
+            display: block;
+            border-radius: 18px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .portfolio-section {
+            max-width: 1100px;
+            margin: 3.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-kicker {
+            font-size: 0.82rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #6f4c38;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+
+        .portfolio-section-title {
+            font-size: 1.6rem;
+            letter-spacing: 0.06em;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .portfolio-section-text {
+            max-width: 720px;
+            color: var(--muted);
+            margin-bottom: 1.8rem;
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.5rem;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1.3rem;
+        }
+
+        .portfolio-card {
+            background: var(--card-bg);
+            border-radius: 18px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+            border: 1px solid var(--border-soft);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 36px rgba(0,0,0,0.08);
+            background-color: var(--accent);
+        }
+
+        .portfolio-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.35rem;
+            color: var(--text);
+        }
+
+        .brand-label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #6f4c38;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+
+        .portfolio-card p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .sample-list {
+            list-style: none;
+            margin: 0 0 1.2rem;
+            padding: 0;
+        }
+
+        .sample-list li {
+            font-size: 0.92rem;
+            color: var(--muted);
+            margin-bottom: 0.35rem;
+        }
+
+        .sample-list li::before {
+            content: "• ";
+            font-weight: 700;
+            color: var(--secondary);
+        }
+
+        .portfolio-btn {
+            display: inline-block;
+            align-self: flex-start;
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 999px;
+            text-decoration: none;
+            margin-top: auto;
+            font-size: 0.92rem;
+            font-weight: 600;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid transparent;
+        }
+
+        .portfolio-btn:hover {
+            background-color: var(--primary);
+            color: var(--secondary);
+            border: 1px solid var(--secondary);
+        }
+
+        .portfolio-cta {
+            text-align: center;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 900px) {
+            .featured-grid,
+            .portfolio-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .featured-grid,
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-hero-image img {
+                height: 300px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -34,139 +211,154 @@
 
 <main>
 
-    <!-- HERO -->
     <section class="portfolio-hero">
         <h1 class="portfolio-heading">Copywriting Portfolio</h1>
         <p class="portfolio-subtext">
-            A curated selection of email funnels, sales pages, scripts, niche samples, and client-facing copy written for coaches, creators, and small businesses.
+            A curated collection of ecommerce email campaigns, product launches, sales pages, and marketing samples written to help brands turn attention into buyers.
         </p>
 
         <div class="portfolio-hero-image">
-            <img src="PFW3.jpeg" alt="Natalie working" />
+            <img src="PFW3.jpeg" alt="Natalie working">
         </div>
     </section>
 
-
-
-    <!-- EMAIL COPY -->
     <section class="portfolio-section">
-        <h2>Email Copy</h2>
+        <p class="section-kicker">Featured Work</p>
+        <h2 class="portfolio-section-title">Ecommerce Email Samples</h2>
+        <p class="portfolio-section-text">
+            These samples focus on the kind of work I create for ecommerce, wellness, supplement, hydration, and recovery brands.
+        </p>
+
+        <div class="featured-grid">
+
+            <div class="portfolio-card">
+                <div>
+                    <p class="brand-label">Lactigo Product</p>
+                    <h3>Recovery Supplement Email Samples</h3>
+                    <p>Welcome flow, seasonal campaign, and email marketing samples written for a recovery-focused supplement brand.</p>
+                    <ul class="sample-list">
+                        <li>Revenue audit</li>
+                        <li>Welcome flow</li>
+                        <li>Seasonal summer campaign</li>
+                    </ul>
+                </div>
+                <a class="portfolio-btn" href="PASTE-LACTIGO-GOOGLE-DRIVE-LINK-HERE" target="_blank">View Sample</a>
+            </div>
+
+            <div class="portfolio-card">
+                <div>
+                    <p class="brand-label">Propel Water</p>
+                    <h3>Hydration Brand Email Samples</h3>
+                    <p>Cart recovery and seasonal email samples built around hydration, performance, summer activity, and repeat purchases.</p>
+                    <ul class="sample-list">
+                        <li>Revenue audit</li>
+                        <li>Cart recovery emails</li>
+                        <li>Seasonal campaign</li>
+                    </ul>
+                </div>
+                <a class="portfolio-btn" href="PASTE-PROPEL-GOOGLE-DRIVE-LINK-HERE" target="_blank">View Sample</a>
+            </div>
+
+            <div class="portfolio-card">
+                <div>
+                    <p class="brand-label">Sunray Saunas</p>
+                    <h3>Product Launch Campaign</h3>
+                    <p>Launch emails written for a wellness and recovery brand introducing a sauna product to its audience.</p>
+                    <ul class="sample-list">
+                        <li>Product launch messaging</li>
+                        <li>Offer emails</li>
+                        <li>Conversion-focused campaign copy</li>
+                    </ul>
+                </div>
+                <a class="portfolio-btn" href="PASTE-SUNRAY-GOOGLE-DRIVE-LINK-HERE" target="_blank">View Sample</a>
+            </div>
+
+            <div class="portfolio-card">
+                <div>
+                    <p class="brand-label">Purely Nutrient</p>
+                    <h3>Supplement Brand Email Sample</h3>
+                    <p>Email marketing sample written for a supplement-style ecommerce brand with a focus on trust, education, and product value.</p>
+                    <ul class="sample-list">
+                        <li>Product education</li>
+                        <li>Customer trust-building</li>
+                        <li>Ecommerce email copy</li>
+                    </ul>
+                </div>
+                <a class="portfolio-btn" href="PASTE-PURELY-NUTRIENT-GOOGLE-DRIVE-LINK-HERE" target="_blank">View Sample</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="portfolio-section">
+        <p class="section-kicker">Additional Samples</p>
+        <h2 class="portfolio-section-title">Sales Pages, Scripts, and Email Copy</h2>
+        <p class="portfolio-section-text">
+            A few additional samples from coaching, creator, and service-based projects that show range across long-form copy, nurture emails, and direct response messaging.
+        </p>
 
         <div class="portfolio-grid">
 
             <div class="portfolio-card">
-                <h3>Travel Coaching Email Sequence</h3>
-                <p>The start of a 7-email nurture sequence written for the travel niche to warm cold leads and build trust quickly.</p>
-                <a class="portfolio-btn" 
-                   href="https://drive.google.com/drive/folders/1ZRoEweMqMHSHJ_38aBFS7ZwYmxXmpmaZ?usp=sharing" 
-                   target="_blank">View Sample</a>
+                <div>
+                    <h3>Women’s Lifestyle & Wellness Sales Page</h3>
+                    <p>Sales page focused on emotional positioning, transformation, and conversion for a women’s coaching program.</p>
+                </div>
+                <a class="portfolio-btn" href="https://drive.google.com/drive/folders/1ZRoEweMqMHSHJ_38aBFS7ZwYmxXmpmaZ?usp=sharing" target="_blank">View Sample</a>
             </div>
 
             <div class="portfolio-card">
-                <h3>Video Production Creators Email Sequence</h3>
-                <p>Relationship-building and sales-focused emails for a creator with a large online audience.</p>
-                <a class="portfolio-btn" 
-                   href="https://drive.google.com/drive/folders/1ZRoEweMqMHSHJ_38aBFS7ZwYmxXmpmaZ?usp=sharing" 
-                   target="_blank">View Sample</a>
+                <div>
+                    <h3>Pregnancy Coaching Sales Page</h3>
+                    <p>Long-form sales page designed to help a coaching offer feel clear, trustworthy, and easy to take action on.</p>
+                </div>
+                <a class="portfolio-btn" href="PASTE-PREGNANCY-SALES-PAGE-LINK-HERE" target="_blank">View Sample</a>
             </div>
 
             <div class="portfolio-card">
-                <h3>Fitness Coaching Emails (High-Performance Training Programs)</h3>
-                <p>Email copy for a fitness brand designed to educate, motivate, and convert followers into clients.</p>
-                <a class="portfolio-btn" 
-                   href="https://drive.google.com/drive/folders/1ZRoEweMqMHSHJ_38aBFS7ZwYmxXmpmaZ?usp=sharing" 
-                   target="_blank">View Sample</a>
+                <div>
+                    <h3>Fitness Coaching Email Sequence</h3>
+                    <p>Email sequence written to educate, motivate, and move fitness leads closer to joining a training program.</p>
+                </div>
+                <a class="portfolio-btn" href="https://drive.google.com/drive/folders/1ZRoEweMqMHSHJ_38aBFS7ZwYmxXmpmaZ?usp=sharing" target="_blank">View Sample</a>
+            </div>
+
+            <div class="portfolio-card">
+                <div>
+                    <h3>Video Creator Monetization VSL</h3>
+                    <p>Video sales letter script built around audience growth, monetization, urgency, and offer clarity.</p>
+                </div>
+                <a class="portfolio-btn" href="https://drive.google.com/drive/folders/1ZRoEweMqMHSHJ_38aBFS7ZwYmxXmpmaZ?usp=sharing" target="_blank">View Sample</a>
+            </div>
+
+            <div class="portfolio-card">
+                <div>
+                    <h3>Travel Coaching Email Sequence</h3>
+                    <p>The start of a nurture sequence written to warm cold leads, build trust, and introduce a travel coaching offer.</p>
+                </div>
+                <a class="portfolio-btn" href="https://drive.google.com/drive/folders/1ZRoEweMqMHSHJ_38aBFS7ZwYmxXmpmaZ?usp=sharing" target="_blank">View Sample</a>
+            </div>
+
+            <div class="portfolio-card">
+                <div>
+                    <h3>Funnel Strategy Proposal</h3>
+                    <p>A client-facing strategy sample outlining funnel structure, offer positioning, and customer journey recommendations.</p>
+                </div>
+                <a class="portfolio-btn" href="PASTE-FUNNEL-PROPOSAL-LINK-HERE" target="_blank">View Sample</a>
             </div>
 
         </div>
     </section>
 
-
-
-    <!-- SALES PAGES -->
-    <section class="portfolio-section">
-        <h2>Sales Page Copy</h2>
-
-        <div class="portfolio-grid">
-
-            <div class="portfolio-card">
-                <h3>Sales Page for Men’s Identity & Purpose Program</h3>
-                <p>High-converting long-form and short-form pages built to drive clarity, desire, and sales.</p>
-                <a class="portfolio-btn" 
-                   href="https://drive.google.com/drive/folders/1ZRoEweMqMHSHJ_38aBFS7ZwYmxXmpmaZ?usp=sharing" 
-                   target="_blank">View Sample</a>
-            </div>
-
-            <div class="portfolio-card">
-                <h3>Sales Page for Women’s Lifestyle & Wellness Coaching Program</h3>
-                <p>Sales messaging designed using emotional angles and strong positioning to boost conversions.</p>
-                <a class="portfolio-btn" 
-                   href="https://drive.google.com/drive/folders/1ZRoEweMqMHSHJ_38aBFS7ZwYmxXmpmaZ?usp=sharing" 
-                   target="_blank">View Sample</a>
-            </div>
-
-        </div>
-    </section>
-
-
-
-    <!-- VSL + SCRIPTS -->
-    <section class="portfolio-section">
-        <h2>VSL Script for Video Creator</h2>
-
-        <div class="portfolio-grid">
-
-            <div class="portfolio-card">
-                <h3>VSL Script for Video Creators</h3>
-                <p>A high-impact video sales letter designed to drive urgency and excitement.</p>
-                <a class="portfolio-btn" 
-                   href="https://drive.google.com/drive/folders/1ZRoEweMqMHSHJ_38aBFS7ZwYmxXmpmaZ?usp=sharing" 
-                   target="_blank">View Sample</a>
-            </div>
-
-        </div>
-    </section>
-
-
-
-    <!-- NICHE SAMPLES -->
-    <section class="portfolio-section">
-        <h2>Niche Samples</h2>
-
-        <div class="portfolio-grid">
-
-            <div class="portfolio-card">
-                <h3>Make Money Online Email Sequence for Course Creators</h3>
-                <p>Direct response copy aligned with the digital entrepreneurship niche.</p>
-                <a class="portfolio-btn" 
-                   href="https://drive.google.com/drive/folders/1ZRoEweMqMHSHJ_38aBFS7ZwYmxXmpmaZ?usp=sharing" 
-                   target="_blank">View Sample</a>
-            </div>
-
-            <div class="portfolio-card">
-                <h3>Social Work Coaching Email Sample for Burnout Prevention & Resilience</h3>
-                <p>Warm, trust-building email content tailored to a personal brand audience.</p>
-                <a class="portfolio-btn" 
-                   href="https://drive.google.com/drive/folders/1ZRoEweMqMHSHJ_38aBFS7ZwYmxXmpmaZ?usp=sharing" 
-                   target="_blank">View Sample</a>
-            </div>
-
-        </div>
-    </section>
-
-
-
-    <!-- CTA -->
     <section class="portfolio-cta">
-        <p>Want copy that connects, converts, and scales your coaching or creator business?</p>
+        <p>Want email copy that helps your ecommerce brand turn more browsers into buyers?</p>
         <a href="contact.html" class="btn hero-btn">BOOK A CALL</a>
     </section>
 
 </main>
 
-
 <footer class="site-footer">
-    <p>&copy; 2025 Words That Work by Natalie Boulter. All rights reserved.</p>
+    <p>&copy; 2026 Words That Work by Natalie Boulter. All rights reserved.</p>
     <p>Contact: <span class="footer-email">nataliejboulter@gmail.com</span></p>
 
     <div class="social-icons">
